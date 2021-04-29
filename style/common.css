@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --colr1: blue;          /*website main-color1*/
+    --colr2: red;           /*website main-color2*/
+    /*font_style1*/
+    --font1: 'Overpass', sans-serif; 
+    /*font_style2*/         
+    --font2: 'Ubuntu', sans-serif;
+    /*primary background color*/          
+    --pbgc: green;          
+    /*default shadow*/
+    --dshadw: 0px 0px 2px 2px #cccccc;         
+}
+.background {            /*full-screen container div element*/
+    width: 100vw;   
+    height: auto;
+}
+.main {                  /*content holder div element*/
+    width: 1440px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.row {                   /*column type div container*/
+    overflow: hidden;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+[class*="col"] {            /*col type div*/
+    float: left;
+}
+.f_left {
+    float: left;
+}
+.f_right {
+    float: right;
+}
+.clr_bth::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
